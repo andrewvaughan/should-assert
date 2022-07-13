@@ -1,0 +1,25 @@
+{
+    // should-assert EditorConfig Linting configuration
+    // See: https://github.com/editorconfig-checker/editorconfig-checker#usage
+
+    "Debug"   : false,          // Print debug information
+    "Verbose" : false,          // Print verbose debug information
+
+    "IgnoreDefaults"  : false,  // Ignore default excludes (https://github.com/editorconfig-checker/editorconfig-checker#default-excludes)
+    "SpacesAfterTabs" : false,
+    "NoColor"         : false,  // Don't print colors
+
+    "Exclude"             : [], // Files which should be excluded from checking
+    "AllowedContentTypes" : [], // Additional content types besides text/ and application/octet-stream to include
+    "PassedFiles"         : [],
+
+    // Disable specific checks
+    "Disable": {
+        "EndOfLine"              : false,
+        "Indentation"            : false,
+        "IndentSize"             : false,
+        "InsertFinalNewline"     : false,
+        "TrimTrailingWhitespace" : false,
+        "MaxLineLength"          : false
+    }
+}

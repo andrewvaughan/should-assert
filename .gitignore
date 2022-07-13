@@ -11,8 +11,12 @@
 
 # Prevent dotfiles unless explicit
 .*
+#!.cspell.json
 !.git*
+!.ecrc
 !.editorconfig
+#!.jscpd.json
+!.mega-linter.yml
 
 
 # Byte-compiled / optimized / DLL files
@@ -74,3 +78,5 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+megalinter-reports/

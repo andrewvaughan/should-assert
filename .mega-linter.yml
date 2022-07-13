@@ -1,0 +1,84 @@
+##
+# should-assert MegaLinter configuration
+#
+# See https://oxsecurity.github.io/megalinter/configuration/
+
+
+# Do not automatically apply fixes to the code
+APPLY_FIXES : none
+
+# The name of the repository default branch.
+DEFAULT_BRANCH : develop
+
+# Upload a report to file.io when done for the developer
+FILEIO_REPORTER : true
+
+# Mega-Linter will skip files ignored by git using .gitignore file.
+IGNORE_GITIGNORED_FILES : true
+
+# Directory for all linter configuration rules.
+LINTER_RULES_PATH : .
+
+# The file name for outputting logs.
+LOG_FILE : .mega-linter.log
+
+# How much output the script will generate to the console.
+LOG_LEVEL : DEBUG
+
+# Process linters in parallel to improve overall Mega-Linter performance.
+PARALLEL : true
+
+# Printing alpaca image to console.
+PRINT_ALPACA : false
+
+# Show how long the linting functions take, in total
+SHOW_ELAPSED_TIME : true
+
+# Displays all disabled linters mega-linter could have run.
+SHOW_SKIPPED_LINTERS : false
+
+# Whether to validate the entire codebase or just new/edited files for speed.
+VALIDATE_ALL_CODEBASE : false
+
+# PLUGINS : []
+
+# The linters used in this project
+ENABLE:
+    # GitHub Action workflows (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/action/#readme)
+    #- ACTION
+
+    # Bash scripts (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/bash/#readme)
+    #- BASH
+
+    # Copy/Paste detection (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/copypaste/#readme)
+    #- COPYPASTE
+
+    # Secrets detection (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/credentials/#readme)
+    #- CREDENTIALS
+
+    # .editorconfig compliance (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/editorconfig/#readme)
+    - EDITORCONFIG
+
+    # .env files (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/env/#readme)
+    #- ENV
+
+    # Gherkin validation (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/gherkin/#readme)
+    #- GHERKIN
+
+    # Git configurations (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/git/#readme)
+    #- GIT
+
+    # JSON (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/json/#readme)
+    #- JSON
+
+    # Markdown documentation (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/markdown/#readme)
+    #- MARKDOWN
+
+    # Python PEP8 (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/python/#readme)
+    #- PYTHON
+
+    # Spelling (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/spell/#readme)
+    #- SPELL
+
+    # YAML (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/yaml/#readme)
+    #- YAML
