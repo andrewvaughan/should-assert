@@ -9,6 +9,7 @@ version : 0.2
 language           : en     # Current active spelling language
 minWordLength      : 3      # The minimum length of a word before it is checked
 allowCompoundWords : false  # Allow compound words?
+noConfigSearch     : true
 
 # List of globs to specify which files are to be ignored
 ignorePaths:
