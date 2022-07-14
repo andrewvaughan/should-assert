@@ -146,7 +146,7 @@ rules:
     trailing-spaces : { }
 
 
-    # Forbid non-explictly typed truthy values other than allowed ones.
+    # Forbid non-explicitly typed truthy values other than allowed ones.
     truthy:
         allowed-values:
             - "true"
