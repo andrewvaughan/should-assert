@@ -1,7 +1,6 @@
 {
     "blame"     : true,
     "gitignore" : true,
-    "output"    : "./megalinter-reports/copy-paste/",
     "threshold" : 0,
 
     "reporters": [

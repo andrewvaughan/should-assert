@@ -1,0 +1,158 @@
+##
+# should-assert YAMLLint Configuration
+#
+# See: https://yamllint.readthedocs.io/en/stable/configuration.html#configuration
+---
+
+extends : default       # Work with the default settings, in case more are added
+locale  : en_US.UTF-8   # Set our project locale
+
+
+# Folders and files to ignore
+ignore: |
+    megalinter-reports/
+    tmp/
+
+
+# Rule configurations.
+# See: https://yamllint.readthedocs.io/en/stable/rules.html
+rules:
+
+    # Control the use of flow mappings or number of spaces inside braces ({ and }).
+    braces:
+        forbid                  : non-empty     # Only allow braces if they are representing an empty set
+        min-spaces-inside       : 1
+        max-spaces-inside       : 1
+        min-spaces-inside-empty : 1
+        max-spaces-inside-empty : 1
+
+
+    # Control the use of flow sequences or the number of spaces inside brackets ([ and ]).
+    brackets:
+        forbid                  : non-empty     # Only allow brackets if they are representing an empty set
+        min-spaces-inside       : 1
+        max-spaces-inside       : 1
+        min-spaces-inside-empty : 1
+        max-spaces-inside-empty : 1
+
+
+    # Control the number of spaces before and after colons (:).
+    colons:
+        max-spaces-before : -1
+        max-spaces-after  : 1
+
+
+    # Control the number of spaces before and after commas (,).
+    commas:
+        max-spaces-before : 0
+        min-spaces-after  : 1
+        max-spaces-after  : 1
+
+
+    # Control the position and formatting of comments.
+    comments:
+        require-starting-space  : true
+        ignore-shebangs         : true
+        min-spaces-from-content : 2
+
+
+    # Force comments to be indented like content.
+    comments-indentation : { }
+
+
+    # Require or forbid the use of document end marker (...).
+    document-end : disable      # No preference
+
+
+    # Require or forbid the use of document start marker (---).
+    document-start:
+        present : true
+
+
+    # set a maximal number of allowed consecutive blank lines.
+    empty-lines:
+        max       : 4
+        max-start : 0
+        max-end   : 0
+
+
+    # Prevent nodes with empty content, that implicitly result in null values.
+    empty-values:
+        forbid-in-block-mappings : true
+        forbid-in-flow-mappings  : true
+
+
+    # Limit the permitted values for floating-point numbers.
+    # YAML permits three classes of float expressions:
+    #   (1) approximation to real numbers,
+    #   (2) positive and negative infinity, and
+    #   (3) “not a number”
+    float-values:
+        forbid-inf                     : false
+        forbid-nan                     : false
+        forbid-scientific-notation     : false
+        require-numeral-before-decimal : true
+
+
+    # Control the number of spaces after hyphens (-).
+    hyphens:
+        max-spaces-after : 1
+
+
+    # Control the indentation.
+    indentation:
+        spaces                   : consistent   # Managed via editorconfig
+        indent-sequences         : true
+        check-multi-line-strings : false        # This can mess with code snippets
+
+
+    # Prevent multiple entries with the same key in mappings.
+    key-duplicates : { }
+
+
+    # Enforce alphabetical ordering of keys in mappings.
+    key-ordering : { }
+
+
+    # Set a limit to lines length.
+    line-length : disable       # Managed via editorconfig
+
+
+    # Require a new line character (\n) at the end of files.
+    new-line-at-end-of-file : { }
+
+
+    # Force the type of new line characters.
+    new-lines:
+        type : unix
+
+
+    # Prevent values with octal numbers.
+    octal-values:
+        forbid-implicit-octal : true
+        forbid-explicit-octal : false
+
+
+    # Forbid any string values that are not quoted, or to prevent quoted strings without needing it.
+    quoted-strings:
+        quote-type     : any
+        required       : only-when-needed
+        extra-required :
+            - "^[a-z]+://.*"
+        extra-allowed  : [ ]
+
+
+    # Forbid trailing spaces at the end of lines.
+    trailing-spaces : { }
+
+
+    # Forbid non-explictly typed truthy values other than allowed ones.
+    truthy:
+        allowed-values:
+            - "true"
+            - "false"
+            - "on"
+            - "off"
+            - "yes"
+            - "no"
+        check-keys : true
