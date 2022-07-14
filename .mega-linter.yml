@@ -44,14 +44,13 @@ VALIDATE_ALL_CODEBASE : false
 
 # The linters used in this project
 ENABLE:
-    - ACTION        # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/action/#readme
-    - COPYPASTE     # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/copypaste/#readme
-    #- CREDENTIALS   # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/credentials/#readme
-    - EDITORCONFIG  # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/editorconfig/#readme
-    #- GHERKIN       # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/gherkin/#readme
-    #- GIT           # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/git/#readme
-    #- JSON          # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/json/#readme
-    #- MARKDOWN      # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/markdown/#readme
-    #- PYTHON        # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/python/#readme
-    #- SPELL         # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/spell/#readme
-    #- YAML          # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/yaml/#readme
+    - ACTION        # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/action/#readme
+    - COPYPASTE     # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/copypaste/#readme
+    - EDITORCONFIG  # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/editorconfig/#readme
+    - GHERKIN       # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/gherkin/#readme
+    #- JSON          # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/json/#readme
+    #- MARKDOWN      # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/markdown/#readme
+    #- PYTHON        # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/python/#readme
+    #- REPOSITORY    # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/repository/#readme
+    #- SPELL         # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/spell/#readme
+    #- YAML          # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/yaml/#readme
