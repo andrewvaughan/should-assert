@@ -13,3 +13,11 @@ lint:
 	@docker ps >/dev/null 2>&1 || (echo "Docker must be installed and accessible to run linting."; exit 2)
 
 	npx mega-linter-runner
+
+
+########
+
+.PHONY : clean
+
+clean:
+	rm -rf megalinter-reports

@@ -45,7 +45,7 @@ VALIDATE_ALL_CODEBASE : false
 # The linters used in this project
 ENABLE:
     - ACTION        # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/action/#readme
-    #- COPYPASTE     # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/copypaste/#readme
+    - COPYPASTE     # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/copypaste/#readme
     #- CREDENTIALS   # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/credentials/#readme
     - EDITORCONFIG  # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/editorconfig/#readme
     #- GHERKIN       # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/gherkin/#readme

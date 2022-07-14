@@ -1,0 +1,23 @@
+{
+    "threshold" : 0,
+    "blame"     : true,
+    "gitignore" : true,
+
+    "reporters" : [
+        "console",
+        "markdown"
+    ],
+
+    "ignore": [
+        "**/megalinter-reports/**",
+        "**/node_modules/**",
+        "**/.git/**",
+        "**/.rbenv/**",
+        "**/.venv/**",
+        "**/*cache*/**",
+        "**/.github/**",
+        "**/.idea/**",
+        "**/report/**",
+        "**/*.svg"
+    ]
+}

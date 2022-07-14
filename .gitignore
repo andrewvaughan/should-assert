@@ -22,7 +22,7 @@
 #!.cspell.json
 !.ecrc
 !.mega-linter.yml
-#!.jscpd.json
+!.jscpd.json
 megalinter-reports/
 
 
