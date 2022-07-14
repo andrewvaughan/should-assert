@@ -24,6 +24,4 @@ lint:
 .PHONY : clean
 
 clean:
-	rm -rf \
-		megalinter-reports \
-		tmp
+	rm -rf megalinter-reports

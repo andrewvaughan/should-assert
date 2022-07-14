@@ -37,7 +37,7 @@ words:
     - DEVSKIM
     - JSONLINT
     - npx
-    - osxsecurity
+    - oxsecurity
     - utf
 
 # List of words to be always considered incorrect
