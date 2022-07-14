@@ -2,8 +2,7 @@
 # should-assert EditorConfig Configuration
 # http://EditorConfig.org
 #
-# Assists with style consistency within editors. Enforced with linting.
-######################################################################################################################
+
 
 ### Prevents EditorConfig configurations that may exist in parent directories from being parsed
 root = true
@@ -18,7 +17,7 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 max_line_length = 155
 
-[*.{cfg,ini,toml,yml},.editorconfig,.git*]
+[*.{cfg,feature,ini,toml,yml},.editorconfig,.git*]
 indent_style = space
 indent_size = 2
 

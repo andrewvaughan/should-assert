@@ -1,0 +1,66 @@
+##
+# should-assert MegaLinter configuration
+#
+# See https://oxsecurity.github.io/megalinter/configuration/
+---
+
+# Do not automatically apply fixes to the code
+APPLY_FIXES : none
+
+# The name of the repository default branch.
+DEFAULT_BRANCH : develop
+
+# Upload a report to file.io when done for the developer
+FILEIO_REPORTER : true
+
+# Mega-Linter will skip files ignored by git using .gitignore file.
+IGNORE_GITIGNORED_FILES : true
+
+# Directory for all linter configuration rules.
+LINTER_RULES_PATH : .
+
+# The file name for outputting logs.
+LOG_FILE : .mega-linter.log
+
+# How much output the script will generate to the console.
+LOG_LEVEL : DEBUG
+
+# Process linters in parallel to improve overall Mega-Linter performance.
+PARALLEL : true
+
+# Printing alpaca image to console.
+PRINT_ALPACA : false
+
+# Show how long the linting functions take, in total
+SHOW_ELAPSED_TIME : true
+
+# Displays all disabled linters mega-linter could have run.
+SHOW_SKIPPED_LINTERS : false
+
+# Whether to validate the entire codebase or just new/edited files for speed.
+VALIDATE_ALL_CODEBASE : false
+
+# PLUGINS : []
+
+# The linters used in this project
+ENABLE:
+    - ACTION        # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/action/#readme
+    - COPYPASTE     # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/copypaste/#readme
+    - EDITORCONFIG  # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/editorconfig/#readme
+    #- GHERKIN       # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/gherkin/#readme
+    - JSON          # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/json/#readme
+    #- MARKDOWN      # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/markdown/#readme
+    #- PYTHON        # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/python/#readme
+    - REPOSITORY    # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/repository/#readme
+    - SPELL         # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/spell/#readme
+    - YAML          # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/yaml/#readme
+
+DISABLE_LINTERS:
+    - JSON_JSONLINT         # Seems to be abandoned; doesn't support comments
+    - REPOSITORY_DEVSKIM    # Can't seem to have it ignore megalinter-reports/ (https://github.com/oxsecurity/megalinter/issues/1603)
+    - JSON_PRETTIER         # Prettier expects files in a standard different than this project uses
+    - YAML_PRETTIER
+
+
+# Configuration filename for cspell
+SPELL_CSPELL_CONFIG_FILE : .cspell.yml
