@@ -6,13 +6,10 @@
 # AUTO-DETECT
 #   Handle line endings automatically for files detected as text and leave all files detected as binary untouched.
 #   This will handle all files NOT defined below.
-
 * text=auto
 
 
-##
 # SOURCE CODE
-
 *.htm      text diff=html
 *.html     text diff=html
 *.ini      text
@@ -26,9 +23,7 @@ Makefile   text
 makefile   text
 
 
-##
 # DOCUMENTATION
-
 *.ipynb      text
 *.markdown   text
 *.md         text
@@ -55,9 +50,7 @@ readme       text
 TODO         text
 
 
-##
 # CONFIGS
-
 *.conf          text
 *.config        text
 .editorconfig   text
@@ -67,9 +60,7 @@ TODO         text
 .gitignore      text
 
 
-##
 # GRAPHICS
-
 *.ai   filter=lfs diff=lfs merge=lfs -text
 *.bmp  filter=lfs diff=lfs merge=lfs -text
 *.eps  filter=lfs diff=lfs merge=lfs -text
@@ -93,9 +84,7 @@ TODO         text
 *.webp filter=lfs diff=lfs merge=lfs -text
 
 
-############################################################################################################################################
 # ARCHIVES
-
 *.7z  filter=lfs diff=lfs merge=lfs -text
 *.gz  filter=lfs diff=lfs merge=lfs -text
 *.jar filter=lfs diff=lfs merge=lfs -text
@@ -104,8 +93,6 @@ TODO         text
 *.zip filter=lfs diff=lfs merge=lfs -text
 
 
-############################################################################################################################################
 # EXECUTABLES
-
 *.exe filter=lfs diff=lfs merge=lfs -text
 *.pyc filter=lfs diff=lfs merge=lfs -text

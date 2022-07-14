@@ -3,7 +3,7 @@
     "blame"     : true,
     "gitignore" : true,
 
-    "reporters" : [
+    "reporters": [
         "console",
         "markdown"
     ],
