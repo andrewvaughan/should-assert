@@ -45,7 +45,7 @@ VALIDATE_ALL_CODEBASE : false
 # The linters used in this project
 ENABLE:
     # GitHub Action workflows (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/action/#readme)
-    #- ACTION
+    - ACTION
 
     # Bash scripts (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/bash/#readme)
     #- BASH
