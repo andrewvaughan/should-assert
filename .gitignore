@@ -19,11 +19,13 @@
 
 
 # MegaLinter configurations
-#!.cspell.json
+!.cspell.yml
 !.ecrc
+#!.gherkin-lintrc
 !.mega-linter.yml
 !.jscpd.json
 megalinter-reports/
+tmp/
 
 
 # Byte-compiled / optimized / DLL files

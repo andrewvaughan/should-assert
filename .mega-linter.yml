@@ -2,7 +2,7 @@
 # should-assert MegaLinter configuration
 #
 # See https://oxsecurity.github.io/megalinter/configuration/
-
+---
 
 # Do not automatically apply fixes to the code
 APPLY_FIXES: none
@@ -52,10 +52,14 @@ ENABLE:
     #- MARKDOWN      # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/markdown/#readme
     #- PYTHON        # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/python/#readme
     - REPOSITORY    # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/repository/#readme
-    #- SPELL         # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/spell/#readme
+    - SPELL         # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/spell/#readme
     #- YAML          # https://oxsecurity.github.io/megalinter/6.0.2/descriptors/yaml/#readme
 
 DISABLE_LINTERS:
     - JSON_JSONLINT         # Seems to be abandoned; doesn't support comments
     - JSON_PRETTIER         # Mangles files in a standard different than this project uses
     - REPOSITORY_DEVSKIM    # Can't seem to have it ignore megalinter-reports/ (https://github.com/oxsecurity/megalinter/issues/1603)
+
+
+# Configuration filename for cspell
+SPELL_CSPELL_CONFIG_FILE : .cspell.yml
