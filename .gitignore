@@ -9,14 +9,21 @@
 # See https://help.github.com/articles/ignoring-files for more about ignoring files.
 
 
-# Prevent dotfiles unless explicit
+# Prevent dotfiles by default
 .*
-#!.cspell.json
+
+
+# Various configuration files
 !.git*
-!.ecrc
 !.editorconfig
-#!.jscpd.json
+
+
+# MegaLinter configurations
+#!.cspell.json
+!.ecrc
 !.mega-linter.yml
+#!.jscpd.json
+megalinter-reports/
 
 
 # Byte-compiled / optimized / DLL files
@@ -78,5 +85,3 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
-megalinter-reports/

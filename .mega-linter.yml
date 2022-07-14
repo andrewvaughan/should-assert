@@ -44,41 +44,14 @@ VALIDATE_ALL_CODEBASE : false
 
 # The linters used in this project
 ENABLE:
-    # GitHub Action workflows (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/action/#readme)
-    - ACTION
-
-    # Bash scripts (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/bash/#readme)
-    #- BASH
-
-    # Copy/Paste detection (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/copypaste/#readme)
-    #- COPYPASTE
-
-    # Secrets detection (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/credentials/#readme)
-    #- CREDENTIALS
-
-    # .editorconfig compliance (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/editorconfig/#readme)
-    - EDITORCONFIG
-
-    # .env files (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/env/#readme)
-    #- ENV
-
-    # Gherkin validation (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/gherkin/#readme)
-    #- GHERKIN
-
-    # Git configurations (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/git/#readme)
-    #- GIT
-
-    # JSON (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/json/#readme)
-    #- JSON
-
-    # Markdown documentation (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/markdown/#readme)
-    #- MARKDOWN
-
-    # Python PEP8 (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/python/#readme)
-    #- PYTHON
-
-    # Spelling (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/spell/#readme)
-    #- SPELL
-
-    # YAML (https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/yaml/#readme)
-    #- YAML
+    - ACTION        # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/action/#readme
+    #- COPYPASTE     # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/copypaste/#readme
+    #- CREDENTIALS   # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/credentials/#readme
+    - EDITORCONFIG  # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/editorconfig/#readme
+    #- GHERKIN       # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/gherkin/#readme
+    #- GIT           # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/git/#readme
+    #- JSON          # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/json/#readme
+    #- MARKDOWN      # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/markdown/#readme
+    #- PYTHON        # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/python/#readme
+    #- SPELL         # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/spell/#readme
+    #- YAML          # https://oxsecurity.github.io/megalinter/v5.0.3/descriptors/yaml/#readme

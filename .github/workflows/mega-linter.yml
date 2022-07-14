@@ -32,7 +32,7 @@ jobs:
                 id    : ml
                 uses  : osxsecurity/megalinter/flavors/python@v5
                 env:
-                    VALIDATE_ALL_CODEBASE : ${{ github.event_name == &#39;push&#39; &amp;&amp; github.ref == &#39;refs/heads/main&#39; }}
+                    VALIDATE_ALL_CODEBASE : ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
                     GITHUB_TOKEN          : ${{ secrets.GITHUB_TOKEN }}
 
             -   name : Archive MegaLinter Artifacts
